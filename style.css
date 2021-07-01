@@ -1,0 +1,35 @@
+* {
+    box-sizing: border-box;
+}
+
+#hide-menue {
+    padding: .1em;
+    font-size: auto;
+    line-height: 1;
+    background-color: black;
+    border: 1px solid white;
+    border-radius: .20rem;
+}
+
+#nav-text {
+    color: white;
+}
+
+#youtube-menue {
+    /* padding: .1rem .3rem; */
+    /* font-size: .1rem; */
+    line-height: 1;
+    background-color: black;
+    border: 1px solid white;
+    border-radius: .20rem;
+    /* transition: box-shadow .15s ease-in-out; */
+}
+
+@media (max-width:720px) {
+    #setting-nav {
+        display: block;
+        flex-wrap: inherit;
+        align-items: center;
+        justify-content: space-between;
+    }
+}
