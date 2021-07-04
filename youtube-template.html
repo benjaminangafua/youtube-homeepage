@@ -9,48 +9,148 @@
     <link rel="stylesheet" href="./bootstrap.min.css">
     <link rel="stylesheet" href="./icofont/icofont.min.css">
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
 
 <body>
     <!-- Nav -->
-    <section class="bg-dark">
-        <nav class="navbar navbar-expand-lg navbar-dark">
-            <div class="container" id="setting-nav">
-                <button class="navbar-toggler" id="hide-menue" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-                <!-- Inner nav -->
-                <div class="navbar-brand d-md-inline-flex d-sm-none">
-                    <div class="navbar-toggler-icon p-3 me-sm-3" id="youtube-menue"></div>
-                    <div class="my-0  me-sm-3"><img src="./youtube.png" height="37" alt=""></div>
-                    <div>Youtube</div>
-                </div>
-                <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
-                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Link</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-                        </li>
-                    </ul>
-                    <form class="d-flex">
-                        <input style="border-radius: 0;" class="form-control ms-2" type="search" placeholder="Search" aria-label="Search">
-                        <div style="border-radius: 0;" class="btn btn-outline-dark text-white bg-secondary" type="submit"><i class="icofont-search"></i></div>
-                    </form>
-                    <i class="icofont-mic text-light h3"></i>
-                    <div>
-                        <img src="./upload.svg">
-                    </div>
-                </div>
+    <section>
+        <nav class="navbar navbar-expand-lg navbar-light m-4">
+            <div class="navbar-brand d-md-inline-flex d-sm-flex">
+                <i class=" material-icons me-sm-3" id="youtube-menue">view_headline </i>
+                <div class="my-0  me-sm-3"><img src="./youtube.png" height="37" alt=""></div>
+                <div>YouTube</div>
+            </div>
+            <div class="navbar-collapse" id="nav-icon">
+                <form class="d-flex ms-auto">
+                    <input style="padding: 0px 115px;" class="form-control ms-2 d-lg-block d-sm-none" type="search" placeholder="Search" aria-label="Search">
+                    <div style="border-radius: 2%; margin-left: -8px; text-align: center;" class="align-items-center py-2 px-3  bg-secondary sm" type="submit"><i class="material-icons text-light" id="icon">search</i> </div>
+                </form>
+                <div><i class="material-icons me-4">mic</i></div>
+                <div><i class="material-icons me-4">upload</i></div>
+                <div><i class="material-icons me-4">video_call</i></div>
+                <div><i class="material-icons me-4">apps</i></div>
+                <div><i class="material-icons">notifications</i></div>
             </div>
         </nav>
     </section>
     <!-- Side bar and main content-->
+    <section>
+        <div class="d-lg-flex">
+            <div class="accordion-body text-start d-lg-block" id="responsiveness">
+                <div class="accordion-item p-3">
+                    <i class="material-icons active cursor" id="icon">home</i> &nbsp;&nbsp; Home
+                </div>
+                <div class="accordion-item p-3">
+                    <i class="material-icons cursor" id="icon">explore</i> &nbsp;&nbsp; Explore
+                </div>
+                <div class="accordion-item p-3">
+                    <i class="material-icons cursor" id="icon">subscriptions</i>&nbsp;&nbsp; Subscription
+                </div>
+                <div class="  accordion-item p-3">
+                    <i class="material-icons cursor" id="icon">video_library</i>&nbsp;&nbsp; Library
+                </div>
+                <div class="accordion-item p-3">
+                    <i class="material-icons cursor" id="icon">history</i> &nbsp;&nbsp; History
+                </div>
+                <div class="accordion-item p-3">
+                    <i class="material-icons cursor" id="icon">slideshow</i>&nbsp;&nbsp; Your Videos
+                </div>
+                <div class="  accordion-item p-3">
+                    <i class="material-icons cursor" id="icon">watch_later</i>&nbsp;&nbsp; Watch Later
+                </div>
+                <div class="  accordion-item p-3">
+                    <i class="material-icons cursor" id="icon">thumb_up</i>&nbsp;&nbsp; Liked Videos
+                </div>
+                <div class="  accordion-item p-3 text-uppercase">
+                    Subscriptions
+                </div>
+            </div>
+            <div class="main">
+                <div class="head d-flex m-lg-2">
+                    <div id="border-radius">javaScript</div>
+                    <div id="border-radius">Learn html</div>
+                    <div id="border-radius">Learn css</div>
+                    <div id="border-radius">Learn php</div>
+                    <div id="border-radius">Learn python</div>
+                    <div id="border-radius">Learn jQuery</div>
+                    <div id="border-radius">Learn JSON</div>
+                </div>
+                <div class="container ms-1 mt-2">
+                    <div class="row g-4">
+                        <div class="card border-white col-md-4 col-lg-3" id="card-bg">
+                            <img src="./img/istockphoto-1192812058-612x612.jpg" class="card-img" alt="">
+                            <div class="card-body text-start">
+                                <div class="card-title mb-3 ">Learn Javascript in 10hrs.</div>
 
+                                <span><img src="./img/istockphoto-862947126-612x612.jpg" height="50" width="50" class="rounded-circle" alt=""></span>
+                                <span>Lorem ipsum dolor sit amet</span>
+                            </div>
+                        </div>
+                        <div class="card border-white col-md-4 col-lg-3" id="card-bg">
+                            <img src="./img/istockphoto-1047617140-612x612.jpg" class="card-img" alt="">
+                            <div class="card-body text-start">
+                                <div class="card-title mb-3 ">Lorem ipsum dolor sit.</div>
+
+                                <span><img src="./img/istockphoto-862947126-612x612.jpg" height="50" width="50" class="rounded-circle" alt=""></span>
+                                <span>Lorem ipsum dolor sit amet</span>
+                            </div>
+                        </div>
+                        <div class="card border-white col-md-4 col-lg-3" id="card-bg">
+                            <img src="./img/istockphoto-1049755270-612x612.jpg" class="card-img" alt="">
+                            <div class="card-body text-start">
+                                <div class="card-title mb-3 ">Lorem ipsum dolor sit.</div>
+                                <div class="card-text text-secondary">
+                                    <span><img src="./img/istockphoto-862947126-612x612.jpg" height="50" width="50" class="rounded-circle" alt=""></span>
+                                    <span>Lorem ipsum dolor sit amet</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card border-white col-md-4 col-lg-3" id="card-bg">
+                            <img src="./img/istockphoto-1098277142-612x612.jpg" class="card-img" alt="">
+                            <div class="card-body text-start">
+                                <div class="card-title mb-3 ">Lorem ipsum dolor sit.</div>
+                                <span><img src="./img/istockphoto-862947126-612x612.jpg" height="50" width="50" class="rounded-circle" alt=""></span>
+                                <span>Lorem ipsum dolor sit amet</span>
+                            </div>
+                        </div>
+                        <div class="card border-white col-md-4 col-lg-3" id="card-bg">
+                            <img src="./img/istockphoto-1210264557-612x612.jpg" class="card-img" alt="">
+                            <div class="card-body text-start">
+                                <div class="card-title mb-3 ">Lorem ipsum dolor sit.</div>
+                                <span><img src="./img/istockphoto-862947126-612x612.jpg" height="50" width="50" class="rounded-circle" alt=""></span>
+                                <span>Lorem ipsum dolor sit amet</span>
+                            </div>
+                        </div>
+                        <div class="card border-white col-md-4 col-lg-3" id="card-bg">
+                            <img src="./img/istockphoto-1250639681-612x612.jpg" class="card-img" alt="">
+                            <div class="card-body text-start">
+                                <div class="card-title mb-3 ">Lorem ipsum dolor sit.</div>
+                                <span><img src="./img/istockphoto-862947126-612x612.jpg" height="50" width="50" class="rounded-circle" alt=""></span>
+                                <span>Lorem ipsum dolor sit amet</span>
+                            </div>
+                        </div>
+                        <div class="card border-white col-md-4 col-lg-3" id="card-bg">
+                            <img src="./img/istockphoto-507420432-612x612.jpg" class="card-img" alt="">
+                            <div class="card-body text-start">
+                                <div class="card-title mb-3 ">Lorem ipsum dolor sit.</div>
+                                <span><img src="./img/istockphoto-862947126-612x612.jpg" height="50" width="50" class="rounded-circle" alt=""></span>
+                                <span>Lorem ipsum dolor sit amet</span>
+                            </div>
+                        </div>
+                        <div class="card border-white col-md-4 col-lg-3" id="card-bg">
+                            <img src="./img/istockphoto-949396052-612x612.jpg" class="card-img" alt="">
+                            <div class="card-body text-start">
+                                <div class="card-title mb-3 ">Lorem ipsum dolor sit.</div>
+                                <span><img src="./img/istockphoto-862947126-612x612.jpg" height="50" width="50" class="rounded-circle" alt=""></span>
+                                <span>Lorem ipsum dolor sit amet</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <script type="text/javascript" src="./bootstrap.min.js"></script>
 </body>

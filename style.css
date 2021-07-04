@@ -2,34 +2,55 @@
     box-sizing: border-box;
 }
 
-#hide-menue {
-    padding: .1em;
-    font-size: auto;
-    line-height: 1;
-    background-color: black;
-    border: 1px solid white;
-    border-radius: .20rem;
-}
-
 #nav-text {
     color: white;
 }
 
 #youtube-menue {
-    /* padding: .1rem .3rem; */
-    /* font-size: .1rem; */
-    line-height: 1;
-    background-color: black;
-    border: 1px solid white;
+    /* line-height: 1; */
+    border: 1px solid rgb(2, 0, 0);
     border-radius: .20rem;
-    /* transition: box-shadow .15s ease-in-out; */
+    font-size: 2em;
+    transition: box-shadow .15s ease-in-out;
+}
+
+#icon {
+    padding: 0px;
+    font-size: 20px;
+}
+
+.cursor {
+    cursor: pointer;
+}
+
+#card-img {
+    width: 70%;
+}
+
+#card-bg {
+    background-color: rgb(230, 230, 233);
+    padding: 1px !important;
+}
+
+#border-radius {
+    background-color: gainsboro !important;
+    display: flex;
+    margin-right: 1%;
+    border-radius: 1em;
+    padding: 1%;
 }
 
 @media (max-width:720px) {
-    #setting-nav {
-        display: block;
-        flex-wrap: inherit;
-        align-items: center;
-        justify-content: space-between;
+    #responsiveness {
+        display: none;
+    }
+}
+
+@media (max-width:992px) {
+    #responsiveness {
+        display: none;
+    }
+    #nav-icon {
+        display: flex;
     }
 }
