@@ -6,12 +6,17 @@
     color: white;
 }
 
+#nav-banner {
+    display: flex;
+    gap: 12%;
+}
+
 #youtube-menue {
     /* line-height: 1; */
     border: 1px solid rgb(2, 0, 0);
     border-radius: .20rem;
     font-size: 2em;
-    transition: box-shadow .15s ease-in-out;
+    /* transition: box-shadow .15s ease-in-out; */
 }
 
 #icon {
@@ -27,9 +32,15 @@
     width: 70%;
 }
 
+#varified {
+    /* background-color: grey; */
+    color: rgb(90, 89, 89);
+    font-size: smaller;
+}
+
 #card-bg {
     background-color: rgb(230, 230, 233);
-    padding: 1px !important;
+    padding: 0px !important;
 }
 
 #border-radius {
@@ -44,6 +55,9 @@
     #responsiveness {
         display: none;
     }
+    #search {
+        display: none;
+    }
 }
 
 @media (max-width:992px) {
@@ -52,5 +66,9 @@
     }
     #nav-icon {
         display: flex;
+    }
+    #nav-banner {
+        display: flex;
+        gap: 12%;
     }
 }

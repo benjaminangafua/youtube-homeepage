@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="./icofont/icofont.min.css">
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="icon" href="./youtube.png">
 </head>
 
 <body>
@@ -23,14 +24,20 @@
             </div>
             <div class="navbar-collapse" id="nav-icon">
                 <form class="d-flex ms-auto">
-                    <input style="padding: 0px 115px;" class="form-control ms-2 d-lg-block d-sm-none" type="search" placeholder="Search" aria-label="Search">
+                    <input style="padding: 0px 115px;" class="form-control ms-0 d-lg-block" id="search" type="search" placeholder="Search" aria-label="Search">
                     <div style="border-radius: 2%; margin-left: -8px; text-align: center;" class="align-items-center py-2 px-3  bg-secondary sm" type="submit"><i class="material-icons text-light" id="icon">search</i> </div>
                 </form>
                 <div><i class="material-icons me-4">mic</i></div>
                 <div><i class="material-icons me-4">upload</i></div>
                 <div><i class="material-icons me-4">video_call</i></div>
-                <div><i class="material-icons me-4">apps</i></div>
-                <div><i class="material-icons">notifications</i></div>
+                <div><i class="material-icons">apps</i></div>
+                <div class="position-relative"><i class="material-icons">notifications</i><span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                    9+
+                    <span class="visually-hidden">unread messages</span>
+                    </span>
+                </div>
+                <div><img src="./profile.jpeg" height="30" width="30" class="rounded-circle ms-1" alt=""></div>
+
             </div>
         </nav>
     </section>
@@ -67,6 +74,7 @@
                 </div>
             </div>
             <div class="main">
+                <hr>
                 <div class="head d-flex m-lg-2">
                     <div id="border-radius">javaScript</div>
                     <div id="border-radius">Learn html</div>
@@ -76,74 +84,112 @@
                     <div id="border-radius">Learn jQuery</div>
                     <div id="border-radius">Learn JSON</div>
                 </div>
+                <hr>
                 <div class="container ms-1 mt-2">
                     <div class="row g-4">
                         <div class="card border-white col-md-4 col-lg-3" id="card-bg">
-                            <img src="./img/istockphoto-1192812058-612x612.jpg" class="card-img" alt="">
-                            <div class="card-body text-start">
-                                <div class="card-title mb-3 ">Learn Javascript in 10hrs.</div>
-
-                                <span><img src="./img/istockphoto-862947126-612x612.jpg" height="50" width="50" class="rounded-circle" alt=""></span>
-                                <span>Lorem ipsum dolor sit amet</span>
-                            </div>
-                        </div>
-                        <div class="card border-white col-md-4 col-lg-3" id="card-bg">
-                            <img src="./img/istockphoto-1047617140-612x612.jpg" class="card-img" alt="">
-                            <div class="card-body text-start">
-                                <div class="card-title mb-3 ">Lorem ipsum dolor sit.</div>
-
-                                <span><img src="./img/istockphoto-862947126-612x612.jpg" height="50" width="50" class="rounded-circle" alt=""></span>
-                                <span>Lorem ipsum dolor sit amet</span>
-                            </div>
-                        </div>
-                        <div class="card border-white col-md-4 col-lg-3" id="card-bg">
-                            <img src="./img/istockphoto-1049755270-612x612.jpg" class="card-img" alt="">
-                            <div class="card-body text-start">
-                                <div class="card-title mb-3 ">Lorem ipsum dolor sit.</div>
-                                <div class="card-text text-secondary">
-                                    <span><img src="./img/istockphoto-862947126-612x612.jpg" height="50" width="50" class="rounded-circle" alt=""></span>
-                                    <span>Lorem ipsum dolor sit amet</span>
+                            <video id="video" src="https://youtu.be/A8ldqcFS5S8" poster="./img/istockphoto-1192812058-612x612.jpg" loop controls width="280">on</video>
+                            <div class="card-body text-start d-flex">
+                                <div class="me-2">
+                                    <img src="./profile.jpeg" height="30" width="30" class="rounded-circle ms-1" alt=""></div>
+                                <div>
+                                    <div class="card-title"><strong> Learn Javascript in 10hrs.</strong></div>
+                                    <small>
+                                        Tech Daily Dairy
+                                        </small><br>
+                                    <small>5.8M views 2 months ago</small> <i class="material-icons" id="varified">check_circle_outline</i>
                                 </div>
                             </div>
                         </div>
                         <div class="card border-white col-md-4 col-lg-3" id="card-bg">
-                            <img src="./img/istockphoto-1098277142-612x612.jpg" class="card-img" alt="">
-                            <div class="card-body text-start">
-                                <div class="card-title mb-3 ">Lorem ipsum dolor sit.</div>
-                                <span><img src="./img/istockphoto-862947126-612x612.jpg" height="50" width="50" class="rounded-circle" alt=""></span>
-                                <span>Lorem ipsum dolor sit amet</span>
+                            <video id="video" src="https://youtu.be/A8ldqcFS5S8" poster="./img/istockphoto-1047617140-612x612.jpg" loop controls width="280">on</video>
+                            <div class="card-body text-start d-flex">
+                                <div class="me-2"><img src="./profile.jpeg" height="30" width="30" class="rounded-circle ms-1" alt=""></div>
+                                <div>
+                                    <div class="card-title"><strong> Learn Javascript in 10hrs.</strong></div>
+                                    <small>
+                                        Tech Daily Dairy
+                                        </small><br>
+                                    <small>5.8M views 2 months ago</small> <i class="material-icons" id="varified">check_circle_outline</i>
+                                </div>
                             </div>
                         </div>
                         <div class="card border-white col-md-4 col-lg-3" id="card-bg">
-                            <img src="./img/istockphoto-1210264557-612x612.jpg" class="card-img" alt="">
-                            <div class="card-body text-start">
-                                <div class="card-title mb-3 ">Lorem ipsum dolor sit.</div>
-                                <span><img src="./img/istockphoto-862947126-612x612.jpg" height="50" width="50" class="rounded-circle" alt=""></span>
-                                <span>Lorem ipsum dolor sit amet</span>
+                            <video id="video" src="https://youtu.be/A8ldqcFS5S8" poster="./img/istockphoto-1049755270-612x612.jpg" loop controls width="280">on</video>
+                            <div class="card-body text-start d-flex">
+                                <div class="me-2"><img src="./profile.jpeg" height="30" width="30" class="rounded-circle ms-1" alt=""></div>
+                                <div>
+                                    <div class="card-title"><strong> Learn Javascript in 10hrs.</strong></div>
+                                    <small>
+                                        Tech Daily Dairy
+                                        </small><br>
+                                    <small>5.8M views 2 months ago</small> <i class="material-icons" id="varified">check_circle_outline</i>
+                                </div>
                             </div>
                         </div>
                         <div class="card border-white col-md-4 col-lg-3" id="card-bg">
-                            <img src="./img/istockphoto-1250639681-612x612.jpg" class="card-img" alt="">
-                            <div class="card-body text-start">
-                                <div class="card-title mb-3 ">Lorem ipsum dolor sit.</div>
-                                <span><img src="./img/istockphoto-862947126-612x612.jpg" height="50" width="50" class="rounded-circle" alt=""></span>
-                                <span>Lorem ipsum dolor sit amet</span>
+                            <video id="video" src="https://youtu.be/A8ldqcFS5S8" poster="./img/istockphoto-949396052-612x612.jpg" loop controls width="280">on</video>
+                            <div class="card-body text-start d-flex">
+                                <div class="me-2"><img src="./profile.jpeg" height="30" width="30" class="rounded-circle ms-1" alt=""></div>
+                                <div>
+                                    <div class="card-title"><strong> Learn Javascript in 10hrs.</strong></div>
+                                    <small>
+                                        Tech Daily Dairy
+                                        </small><br>
+                                    <small>5.8M views 2 months ago</small> <i class="material-icons" id="varified">check_circle_outline</i>
+                                </div>
                             </div>
                         </div>
                         <div class="card border-white col-md-4 col-lg-3" id="card-bg">
-                            <img src="./img/istockphoto-507420432-612x612.jpg" class="card-img" alt="">
-                            <div class="card-body text-start">
-                                <div class="card-title mb-3 ">Lorem ipsum dolor sit.</div>
-                                <span><img src="./img/istockphoto-862947126-612x612.jpg" height="50" width="50" class="rounded-circle" alt=""></span>
-                                <span>Lorem ipsum dolor sit amet</span>
+                            <video id="video" src="https://youtu.be/A8ldqcFS5S8" poster="./img/istockphoto-894962230-612x612.jpg" loop controls width="280">on</video>
+                            <div class="card-body text-start d-flex">
+                                <div class="me-2"><img src="./profile.jpeg" height="30" width="30" class="rounded-circle ms-1" alt=""></div>
+                                <div>
+                                    <div class="card-title"><strong> Learn Javascript in 10hrs.</strong></div>
+                                    <small>
+                                        Tech Daily Dairy
+                                        </small><br>
+                                    <small>5.8M views 2 months ago</small> <i class="material-icons" id="varified">check_circle_outline</i>
+                                </div>
                             </div>
                         </div>
                         <div class="card border-white col-md-4 col-lg-3" id="card-bg">
-                            <img src="./img/istockphoto-949396052-612x612.jpg" class="card-img" alt="">
-                            <div class="card-body text-start">
-                                <div class="card-title mb-3 ">Lorem ipsum dolor sit.</div>
-                                <span><img src="./img/istockphoto-862947126-612x612.jpg" height="50" width="50" class="rounded-circle" alt=""></span>
-                                <span>Lorem ipsum dolor sit amet</span>
+                            <video id="video" src="https://youtu.be/A8ldqcFS5S8" poster="./img/istockphoto-625135564-612x612.jpg" loop controls width="280">on</video>
+                            <div class="card-body text-start d-flex">
+                                <div class="me-2"><img src="./profile.jpeg" height="30" width="30" class="rounded-circle ms-1" alt=""></div>
+                                <div>
+                                    <div class="card-title"><strong> Learn Javascript in 10hrs.</strong></div>
+                                    <small>
+                                        Tech Daily Dairy
+                                        </small><br>
+                                    <small>5.8M views 2 months ago</small> <i class="material-icons" id="varified">check_circle_outline</i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card border-white col-md-4 col-lg-3" id="card-bg">
+                            <video id="video" src="https://youtu.be/A8ldqcFS5S8" poster="./img/istockphoto-579770188-612x612.jpg" loop controls width="280">on</video>
+                            <div class="card-body text-start d-flex">
+                                <div class="me-2"><img src="./profile.jpeg" height="30" width="30" class="rounded-circle ms-1" alt=""></div>
+                                <div>
+                                    <div class="card-title"><strong> Learn Javascript in 10hrs.</strong></div>
+                                    <small>
+                                        Tech Daily Dairy
+                                        </small><br>
+                                    <small>5.8M views 2 months ago</small> <i class="material-icons" id="varified">check_circle_outline</i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card border-white col-md-4 col-lg-3" id="card-bg">
+                            <video id="video" src="https://youtu.be/A8ldqcFS5S8" poster="./img/istockphoto-1098277142-612x612.jpg" loop controls width="280">on</video>
+                            <div class="card-body text-start d-flex">
+                                <div class="me-2"><img src="./profile.jpeg" height="30" width="30" class="rounded-circle ms-1" alt=""></div>
+                                <div>
+                                    <div class="card-title"><strong> Learn Javascript in 10hrs.</strong></div>
+                                    <small>
+                                        Tech Daily Dairy
+                                        </small><br>
+                                    <small>5.8M views 2 months ago</small> <i class="material-icons" id="varified">check_circle_outline</i>
+                                </div>
                             </div>
                         </div>
                     </div>
