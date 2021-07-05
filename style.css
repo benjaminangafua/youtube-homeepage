@@ -51,6 +51,14 @@
     padding: 1%;
 }
 
+#border-radius-all {
+    background-color: rgb(0, 0, 0) !important;
+    display: flex;
+    margin-right: 1%;
+    padding: 1%;
+    color: white;
+}
+
 @media (max-width:720px) {
     #responsiveness {
         display: none;
